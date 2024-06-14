@@ -14,6 +14,8 @@
 .message {
   max-width: 40%;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
   clear: both;
 }
 
@@ -21,8 +23,16 @@
   float: right;
 }
 
+.message--user .message__avatar {
+  margin: 0 0 0 auto;
+}
+
 .message--bot {
   float: left;
+}
+
+.message--bot .message__avatar {
+  margin: auto 0 0 0;
 }
 
 .message__text {
