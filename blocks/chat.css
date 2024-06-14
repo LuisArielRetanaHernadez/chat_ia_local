@@ -8,3 +8,14 @@
   border-radius: 10px;
   background-color: #000;
 }
+
+.message {
+  max-width: 40%;
+  padding: 5px;
+}
+
+.message__text {
+  color: #000;
+  border-radius: 10px;
+  background-color: #fff;
+}
