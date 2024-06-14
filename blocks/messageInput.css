@@ -16,3 +16,10 @@
   background-color: transparent;
   outline: none;
 }
+
+.message-input__button {
+  color: #4158d0;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+}
