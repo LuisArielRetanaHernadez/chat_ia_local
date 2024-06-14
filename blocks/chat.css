@@ -7,6 +7,7 @@
   color: #fff;
   border-radius: 10px;
   background-color: #000;
+  overflow-y: auto;
 }
 
 .message {
