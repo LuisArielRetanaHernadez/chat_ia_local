@@ -1,4 +1,10 @@
 .messages {
-  max-width: 1400px;
+  max-width: 1300px;
+  height: 400px;
+  max-height: 100vh;
   padding: 5px;
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #000;
 }
