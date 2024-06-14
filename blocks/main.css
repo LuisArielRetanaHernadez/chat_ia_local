@@ -5,6 +5,7 @@
   overflow: hidden;
 }
 
+.main__message-input,
 .main__messages {
   margin: auto;
 }
