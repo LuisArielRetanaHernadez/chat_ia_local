@@ -3,6 +3,7 @@
 @import url(../blocks/header.css);
 @import url(../blocks/main.css);
 @import url(../blocks/chat.css);
+@import url(../blocks/messageInput.css);
 * {
   margin: 0;
   padding: 0;
