@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat IA</title>
     <link rel="stylesheet" href="./pages/index.css" />
+    <script type="module">
+      const $ = (el) => document.querySelector(el);
+
+      const $form = $("form");
+      const $input = $("input");
+      const $button = $("button");
+      const $template = $("#template-message");
+      const $messages = $(".messages");
+      const $container = $(".main");
+    </script>
   </head>
   <body>
     <header class="header">
