@@ -20,6 +20,7 @@
         const message = $input.value.trim();
 
         if (message !== " ") {
+          addMessage(message, "You");
           $input.value = "";
         }
       });
@@ -28,7 +29,9 @@
         const cloneTemplate = $template.content.cloneNode(true);
         const $newMessage = cloneTemplate.querySelector(".message");
 
-        const $who = $newMessage.querySelector(".message__avatar");
+        const $who = $newMessage.querySelector(
+          ".message__avatar .avatar__char"
+        );
         const $text = $newMessage.querySelector(".message__text");
 
         $text.textContent = text;
@@ -39,6 +42,8 @@
         );
 
         $messages.appendChild($newMessage);
+
+        $messages.scrollTop = $messages.scrollHeight;
       };
 
       console.log($form);
