@@ -36,6 +36,8 @@
           $newMessage.classList.add(
             sender === "IA" ? "message--bot" : "message--user"
           );
+
+          $messages.appendChild($newMessage);
         };
       });
 
