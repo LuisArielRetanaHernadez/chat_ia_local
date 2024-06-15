@@ -6,6 +6,8 @@
     <title>Chat IA</title>
     <link rel="stylesheet" href="./pages/index.css" />
     <script type="module">
+      import { CreateMLCEngine } from "https://esm.run/@mlc-ai/web-llm";
+      const SELECT_MODEL_IA = "gemma-2b-it-q4f32_1-MLC";
       const $ = (el) => document.querySelector(el);
 
       const $form = $("form");
