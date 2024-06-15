@@ -22,24 +22,24 @@
         if (message !== " ") {
           $input.value = "";
         }
-
-        const addMessage = (text, sender) => {
-          const cloneTemplate = $template.content.cloneNode(true);
-          const $newMessage = cloneTemplate.querySelector(".message");
-
-          const $who = $newMessage.querySelector(".message__avatar");
-          const $text = $newMessage.querySelector(".message__text");
-
-          $text.textContent = text;
-          $who.textContent = sender === "IA" ? "I.A" : "You";
-
-          $newMessage.classList.add(
-            sender === "IA" ? "message--bot" : "message--user"
-          );
-
-          $messages.appendChild($newMessage);
-        };
       });
+
+      const addMessage = (text, sender) => {
+        const cloneTemplate = $template.content.cloneNode(true);
+        const $newMessage = cloneTemplate.querySelector(".message");
+
+        const $who = $newMessage.querySelector(".message__avatar");
+        const $text = $newMessage.querySelector(".message__text");
+
+        $text.textContent = text;
+        $who.textContent = sender === "IA" ? "I.A" : "You";
+
+        $newMessage.classList.add(
+          sender === "IA" ? "message--bot" : "message--user"
+        );
+
+        $messages.appendChild($newMessage);
+      };
 
       console.log($form);
     </script>
