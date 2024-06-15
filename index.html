@@ -22,6 +22,11 @@
         if (message !== " ") {
           $input.value = "";
         }
+
+        const addMessage = (text, sender) => {
+          const cloneTemplate = $template.content.cloneNode(true);
+          const $newMessage = cloneTemplate.querySelector(".message");
+        };
       });
 
       console.log($form);
